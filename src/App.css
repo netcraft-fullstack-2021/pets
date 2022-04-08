@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+:root {
+  --dogs: burlywood;
+  --cats: darkgoldenrod;
+  --fish: darksalmon;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+  font-family: 'Anek Odia', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  margin-bottom: 20px;
+  padding: 20px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+nav button {
+  border: none;
+  margin: 0 10px;
+  padding: 10px 40px;
+  font-size: 22px;
 }
 
-.App-link {
-  color: #61dafb;
+nav button:first-child {
+  margin-left: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav button.dogs {
+  background-color: var(--dogs);
+}
+
+nav button.cats {
+  background-color: var(--cats);
+}
+
+nav button.fish {
+  background-color: var(--fish);
+}
+
+main.dogs, main.cats, main.fish {
+  width: 100%;
+  padding: 20px;
+  min-height: 200px;
+}
+
+main.dogs {
+  background-color: var(--dogs);
+}
+
+main.cats {
+  background-color: var(--cats);
+}
+
+main.fish {
+  background-color: var(--fish);
 }
