@@ -38,10 +38,15 @@ nav button.fish {
   background-color: var(--fish);
 }
 
+nav .selected {
+  color: white;
+}
+
 main.dogs, main.cats, main.fish {
   width: 100%;
   padding: 20px;
   min-height: 200px;
+  color: white;
 }
 
 main.dogs {
