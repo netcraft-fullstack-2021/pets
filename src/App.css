@@ -15,26 +15,28 @@ nav {
 }
 
 
-nav button {
+nav button, nav a {
   border: none;
   margin: 0 10px;
   padding: 10px 40px;
   font-size: 22px;
+  color: white;
+  text-decoration: none;
 }
 
-nav button:first-child {
+nav button:first-child, nav a:first-child {
   margin-left: 0;
 }
 
-nav button.dogs {
+nav button.dogs, nav a.dogs {
   background-color: var(--dogs);
 }
 
-nav button.cats {
+nav button.cats, nav a.cats {
   background-color: var(--cats);
 }
 
-nav button.fish {
+nav button.fish, nav a.fish {
   background-color: var(--fish);
 }
 
