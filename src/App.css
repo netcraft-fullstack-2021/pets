@@ -20,8 +20,12 @@ nav button, nav a {
   margin: 0 10px;
   padding: 10px 40px;
   font-size: 22px;
-  color: white;
+  color: black;
   text-decoration: none;
+}
+
+nav a {
+  padding-bottom: 0;
 }
 
 nav button:first-child, nav a:first-child {
@@ -40,7 +44,7 @@ nav button.fish, nav a.fish {
   background-color: var(--fish);
 }
 
-nav .selected {
+nav .active {
   color: white;
 }
 
