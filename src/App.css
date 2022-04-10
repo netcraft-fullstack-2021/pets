@@ -2,6 +2,7 @@
   --dogs: burlywood;
   --cats: darkgoldenrod;
   --fish: darksalmon;
+  --fish-dark: maroon;
 }
 
 
@@ -59,10 +60,32 @@ main.dogs {
   background-color: var(--dogs);
 }
 
+main.dogs .dogs-nav a {
+  color: bisque;
+  text-decoration-line: none;
+  padding: 0px 10px 0 0;
+}
+
+.dogs-food, .dogs-toys {
+  background-color: bisque;
+  padding: 20px;
+  color:black
+}
+
 main.cats {
   background-color: var(--cats);
 }
 
+main.cats img {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0 20px;
+}
+
 main.fish {
   background-color: var(--fish);
+}
+
+main.fish.dark {
+  background-color: var(--fish-dark);
 }
