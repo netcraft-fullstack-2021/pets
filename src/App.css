@@ -1,6 +1,10 @@
 :root {
   --dogs: burlywood;
+  --dogs-dark: #6a4e07;
+  
   --cats: darkgoldenrod;
+  --cats-dark: #634807;
+  
   --fish: darksalmon;
   --fish-dark: maroon;
 }
@@ -88,4 +92,12 @@ main.fish {
 
 main.fish.dark {
   background-color: var(--fish-dark);
+}
+
+main.dogs.dark {
+  background-color: var(--cats-dark);
+}
+
+main.cats.dark {
+  background-color: var(--dogs-dark);
 }
