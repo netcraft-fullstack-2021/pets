@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import './App.css';
 import NavBar from './Navbar';
+import Home from './Home';
 import Dogs from './pages/Dogs';
 import Cats from './pages/Cats';
 import Fish from './pages/Fish';
@@ -17,13 +18,11 @@ function App() {
     <NavBar />
     <main>
       <Routes>
-        <Route path='/' element={<Dogs/>} />
-        
+        <Route path='/' element={<Home />} />
         <Route path='dogs' element={<Dogs />}>
-          <Route path='food' element={<Food />}/>
+          <Route path='food' element={<Food />} />
           <Route path='toys' element={<Toys />}/>
         </Route>
-        
         <Route path='cats' element={<Cats />}>
           <Route path=':catId' element={<Cat />} />
         </Route>

@@ -1,12 +1,11 @@
 import React from 'react';
-import catsData from '../CatsData';
 import { useParams } from 'react-router-dom';
+import catsData from '../CatsData';
 
 function Cat() {
-    const params = useParams();
-    const { name, image, age, color } = catsData[parseInt(params.catId) - 1];
-    
-    return (
+	const params = useParams();
+	const { name, image, age, color } = catsData[parseInt(params.catId) - 1];
+	return (
 		<article>
 			<h1> {name} </h1>
 			<img src={image} />

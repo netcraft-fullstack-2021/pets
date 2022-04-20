@@ -2,7 +2,6 @@ import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
 function Dogs() {
-    
     return <main className='dogs'>
         <h1> Dogs </h1>
         <div className='dogs-nav'>
@@ -11,7 +10,6 @@ function Dogs() {
         </div>
         <Outlet />
     </main>
-
 }
 
 export default Dogs;
